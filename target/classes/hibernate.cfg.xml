@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/jobportal</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">admin</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.music.job.pojo.Address" />
+		<mapping class="com.music.job.pojo.User" />
+		<mapping class="com.music.job.pojo.Admin" />
+		<mapping class="com.music.job.pojo.Applications" />
+		<mapping class="com.music.job.pojo.Jobs" />
+		<mapping class="com.music.job.pojo.Musician" />
+		<mapping class="com.music.job.pojo.MusicRecruitor" />
+		<mapping class="com.music.job.pojo.MessageToAdmin" />
+		<mapping class="com.music.job.pojo.Events" />
+		
+		
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base_index" template="/WEB-INF/Layout/MusicRecruitor/index.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+	<definition name="base_error" template="/WEB-INF/Layout/MusicRecruitor/index.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/error.jsp" />
+	</definition>
+	<definition name="base_success" template="/WEB-INF/Layout/MusicRecruitor/index.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/success.jsp" />
+	</definition>
+	<definition name="signup_error" template="/WEB-INF/Layout/MusicRecruitor/index.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/signup_error.jsp" />
+	</definition>
+	<definition name="recruitor_signup" extends="musician.index">
+		<put-attribute name="body" value="/WEB-INF/views/MusicRecruitor/MusicRecruitor_Signup.jsp" />
+	</definition>
+	
+	<definition name="recruitor_login_success" template="/WEB-INF/Layout/MusicRecruitor/musicrecruitor_layout.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/MusicRecruitor/MusicRecruitor_Home.jsp" />
+	</definition>
+	<definition name="recruitor_postjob" template="/WEB-INF/Layout/MusicRecruitor/musicrecruitor_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/MusicRecruitor/MusicRecruitor_PostJob.jsp" />
+	</definition>
+	<definition name="recruitor_success" template="/WEB-INF/Layout/MusicRecruitor/musicrecruitor_layout.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/MusicRecruitor/MusicRecruitor_Success.jsp" />
+	</definition>
+	<definition name="recruitor_getJobs" template="/WEB-INF/Layout/MusicRecruitor/musicrecruitor_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/MusicRecruitor/MusicRecruitor_ViewJobs.jsp" />
+	</definition>
+	<definition name="recruitor_ViewApplications" template="/WEB-INF/Layout/MusicRecruitor/musicrecruitor_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/MusicRecruitor/MusicRecruitor_ViewApplications.jsp" />
+	</definition>
+	<definition name="recruitor_sendEmail" template="/WEB-INF/Layout/MusicRecruitor/musicrecruitor_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/MusicRecruitor/MusicRecruitor_SendEmail.jsp" />
+	</definition>
+	<definition name="recruitor_updateProfile" template="/WEB-INF/Layout/MusicRecruitor/musicrecruitor_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/MusicRecruitor/MusiRecruitor_UpdateProfile.jsp" />
+	</definition>
+		<definition name="recruitor_ViewMusician" template="/WEB-INF/Layout/MusicRecruitor/musicrecruitor_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/MusicRecruitor/MusicRecruitor_ViewMusician.jsp" />
+	</definition>
+	<definition name="recruitor_ViewMusicianDetails" template="/WEB-INF/Layout/MusicRecruitor/musicrecruitor_layout.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/MusicRecruitor/MusicRecruitor_ViewMusicianDetails.jsp" />
+	</definition>
+	<definition name="recruitor_sendMusicianEmail" template="/WEB-INF/Layout/MusicRecruitor/musicrecruitor_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/MusicRecruitor/MusicRecruitor_SendEmailMusician.jsp" />
+	</definition>
+	<definition name="recruitor_Error" template="/WEB-INF/Layout/MusicRecruitor/musicrecruitor_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/MusicRecruitor/MusicRecruitor_Error.jsp" />
+	</definition>
+</tiles-definitions>

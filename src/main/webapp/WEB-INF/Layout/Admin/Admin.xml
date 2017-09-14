@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="admin_login_success" template="/WEB-INF/Layout/Admin/admin_layout.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/Admin/Admin_Home.jsp" />
+	</definition>
+	<definition name="admin_viewMessages" template="/WEB-INF/Layout/Admin/admin_layout.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/Admin/Admin_ViewMessage.jsp" />
+	</definition>
+	<definition name="admin_viewDetails" template="/WEB-INF/Layout/Admin/admin_layout.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/Admin/Admin_ViewDetails.jsp" />
+	</definition>
+	<definition name="admin_success" template="/WEB-INF/Layout/Admin/admin_layout.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/Admin/Admin_Success.jsp" />
+	</definition>
+	<definition name="admin_viewUsers" template="/WEB-INF/Layout/Admin/admin_layout.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/Admin/Admin_ViewUsers.jsp" />
+	</definition>
+	<definition name="admin_updateProfile" template="/WEB-INF/Layout/Admin/admin_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Admin/Admin_UpdateProfile.jsp" />
+	</definition>
+	<definition name="admin_addEvent" template="/WEB-INF/Layout/Admin/admin_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Admin/Admin_AddEvent.jsp" />
+	</definition>
+	<definition name="admin_viewEvent" template="/WEB-INF/Layout/Admin/admin_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Admin/Admin_ViewEvent.jsp" />
+	</definition>
+	<definition name="admin_ViewParticipants" template="/WEB-INF/Layout/Admin/admin_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Admin/Admin_ViewParticipants.jsp" />
+	</definition>
+	<definition name="admin_Error" template="/WEB-INF/Layout/Admin/admin_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Admin/Admin_Error.jsp" />
+	</definition>
+</tiles-definitions>

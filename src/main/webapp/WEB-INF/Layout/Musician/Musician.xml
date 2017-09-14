@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="musician.index" template="/WEB-INF/Layout/Musician/index.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+	<definition name="musician_signup" extends="musician.index">
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_Signup.jsp" />
+	</definition>	
+	<definition name="musician_login_success" template="/WEB-INF/Layout/Musician/musician_layout.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_Home.jsp" />
+	</definition>
+	<definition name="musician_success" template="/WEB-INF/Layout/Musician/musician_layout.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_Success.jsp" />
+	</definition>
+	<definition name="musician_searchjob" template="/WEB-INF/Layout/Musician/musician_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_SearchJob.jsp" />
+	</definition>
+	<definition name="musician_getJobs" template="/WEB-INF/Layout/Musician/musician_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_ViewApplications.jsp" />
+	</definition>
+	<definition name="musician_updateProfile" template="/WEB-INF/Layout/Musician/musician_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_UpdateProfile.jsp" />
+	</definition>
+	<definition name="musician_viewEvents" template="/WEB-INF/Layout/Musician/musician_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_ViewEvents.jsp" />
+	</definition>
+	<definition name="musician_MyEvents" template="/WEB-INF/Layout/Musician/musician_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_MyEvents.jsp" />
+	</definition>
+	<definition name="musician_ViewJobDetails" template="/WEB-INF/Layout/Musician/musician_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_ViewJobDetails.jsp" />
+	</definition>
+	<definition name="musician_ViewRecruitor" template="/WEB-INF/Layout/Musician/musician_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_ViewRecruitor.jsp" />
+	</definition>
+	<definition name="musician_ViewRecruitorDetails" template="/WEB-INF/Layout/Musician/musician_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_ViewRecruitorDetails.jsp" />
+	</definition>
+	<definition name="musician_sendEmail" template="/WEB-INF/Layout/Musician/musician_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_SendEmail.jsp" />
+	</definition>
+	<definition name="musician_Error" template="/WEB-INF/Layout/Musician/musician_layout.jsp">	
+		<put-attribute name="body" value="/WEB-INF/views/Musician/Musician_Error.jsp" />
+	</definition>
+</tiles-definitions>
